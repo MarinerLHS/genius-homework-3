@@ -5,34 +5,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beauty zone</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <header>
     <nav>
-      <a href="#">Beauty zone</a>
+      <a class="main-logo" href="./index.html">Beauty zone</a>
       <ul>
-        <li><a href="#">Про нас</a></li>
-        <li><a href="#">Чому ми</a></li>
-        <li><a href="#">Наші процедури</a></li>
-        <li><a href="#">Контакти</a></li>
+        <li><a class="internal-link" href="#about-us">Про нас</a></li>
+        <li><a class="internal-link" href="#why-people-choose-us">Чому ми</a></li>
+        <li><a class="internal-link" href="#our-procedures">Наші процедури</a></li>
+        <li><a class="internal-link" href="#contact-section">Контакти</a></li>
       </ul>
       <ul>
-        <li><a href="#"><!-- logo pictures of phone --></a></li>
-        <li><a href="#"><!-- logo pictures of facebook --></a></li>
-        <li><a href="#"><!-- logo pictures of inst --></a></li>
+        <li><a class="external-link" href="#"><img src="./pictures/header-nav/telephone-icon.png"
+              alt="icon of telephone"></a></li>
+        <li><a class="external-link" href="#"><img src="./pictures/header-nav/facebook-icon.png"
+              alt="icon of facebook"></a></li>
+        <li><a class="external-link" href="#"><img src="./pictures/header-nav/instagram-icon.png"
+              alt="icon of instagram"></a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
-      <!-- picture of procedure in cabinet -->
+    <section id="hero-section">
+      <img src="./pictures/hero-title-picture/woman-makes-face-massage.png" alt="woman-makes-face-massage">
       <p>Косметологічна клініка</p>
-      <h1>Beauty Zoone</h1>
-      <button type="button">Замовити дзвінок</button>
+      <h1 class="hero-title">Beauty Zone</h1>
+      <button class="button" type="button">Замовити дзвінок</button>
       <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
     </section>
-    <section>
+    <section id="about-us">
       <h2>Перевтілюйтесь в <span>beauty zone!</span></h2>
       <p>
         Наша косметологічна клініка пропонує вам професійні послуги з догляду
@@ -44,64 +48,68 @@
         вам підтримувати свою красу та молодість.
       </p>
       <p>З нами краса назавжди!</p>
+      <img src="./pictures/about-us/face-before-prcedure.jpg" alt="face-of-woman-before-procedure">
+      <img src="./pictures/about-us/face-after-procedure.jpg" alt="face-of-woman-after-procedure">
 
-      <!-- Pictures of woman before and after procedure -->
     </section>
-    <section>
+    <section id="why-people-choose-us">
       <h2>Чому люди <span>обирають нас</span></h2>
       <ul>
         <li>
           <article>
-            <!-- game-icons:materials-science -->
+            <h3><img src="./pictures/why-people-choose-us/science-logo.png" alt="science-logo"></h3>
             <p>Всі наші косметологи мають вищу медичну освіту
               та стаж роботи від 5 років</p>
           </article>
         </li>
         <li>
           <article>
-            <!-- medicinecosmeticsbottletreatment_109776 1 -->
+            <h3><img src="./pictures/why-people-choose-us/medicine-logo.png" alt="medicine-logo"></h3>
             <p>Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
           </article>
         </li>
         <li>
           <article>
-            <!-- ph:crown-light -->
+            <h3><img src="./pictures/why-people-choose-us/crown-logo.png" alt="crown-logo"></h3>
             <p>Наша мета - підкреслити переваги та приховати недоліки, а не переробити</p>
           </article>
         </li>
       </ul>
     </section>
-    <section>
+    <section id="our-procedures">
       <h2>Наші <span>процедури</span></h2>
       <ul>
-        <li>Маски для обличчя</li>
-        <li>Ін'єкції для обличчя</li>
-        <li>Очищення обличчя</li>
+        <li> <img src="./pictures/our-procedures/face-massage-2.png" alt="massage-of-face-with-cream"> Маски для обличчя
+        </li>
+        <li> <img src="./pictures/our-procedures/injection-in-face.png" alt="injection-in-face"> Ін'єкції для обличчя
+        </li>
+        <li> <img src="./pictures/our-procedures/procedure-of-face-cleaning.png" alt="face-cleaning-procedure"> Очищення
+          обличчя</li>
       </ul>
 
     </section>
-    <section>
+    <section id="contact-section">
       <h2>Як нас <span>знайти</span></h2>
       <p> Запишіться <span>безкоштовно</span>
         та отримайте подарунок</p>
       <!-- form for filling with button and text -->
-      <button type="button">Записатись безкоштовно</button>
+      <button class="button" type="button">Записатись безкоштовно</button>
       <p>Натискаючи на кнопку я погоджуюсь <a href="#">з політикою конфіденційності</a></p>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1706727478794!5m2!1sru!2spl"
-        width="605" height="481" style="border:32;" allowfullscreen="" loading="lazy"
+        width="605" height="481" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </section>
   </main>
   <footer>
     <nav>
-      <a href="#"><!-- logo beauty zone --></a>
+      <a class="footer-logo" href="./index.html">Beauty zone</a>
       <ul>
-        <li><a href="#">Про нас</a></li>
-        <li><a href="#">Чому ми</a></li>
-        <li><a href="#">Наші процедури</a></li>
-        <li><a href="#">Контакти</a></li>
+        <li><a class="internal-link-footer" href="#about-us">Про нас</a></li>
+        <li><a class="internal-link-footer" href="#why-people-choose-us">Чому ми</a></li>
+        <li><a class="internal-link-footer" href="#our-procedures">Наші процедури</a></li>
+        <li><a class="internal-link-footer" href="#contact-section">Контакти</a></li>
       </ul>
       <address>
         <ul>
@@ -113,13 +121,20 @@
       </address>
 
       <ul>
-        <li><a href="#"><!-- logo pictures of phone --></a></li>
-        <li><a href="#"><!-- logo pictures of facebook --></a></li>
-        <li><a href="#"><!-- logo pictures of inst--></a></li>
+        <li><a class="external-link-footer" href="#"><img src="./pictures/header-nav/telephone-icon.png"
+              alt="icon of telephone"></a>
+        </li>
+        <li><a class="external-link-footer" href="#"><img src="./pictures/header-nav/facebook-icon.png"
+              alt="icon of facebook"></a>
+        </li>
+        <li><a class="external-link-footer" href="#"><img src="./pictures/header-nav/instagram-icon.png"
+              alt="icon of instagram"></a>
+        </li>
       </ul>
-      <a href="#">Політика конфіденційності</a>
-      <p>&copy; 2022 Дані захищені</p>
+      <a class="policy" href="#">Політика конфіденційності</a>
+      <p class="copyright">&copy; 2022 Дані захищені</p>
     </nav>
+    <img src="./pictures/footer/footer-image-of-drugs.png" alt="image-of-drugs-medicine">
   </footer>
 </body>
 
