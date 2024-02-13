@@ -43,7 +43,7 @@
   --color-dark-grey: #4A4A4A;
   --color-light-grey: #747272;
   --color-secondary-blue: #011F4A;
-  --color-main-white: #FFFFFF
+  --color-main-white: #FFFFFF;
 }
 
 /* main */
@@ -54,12 +54,27 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
+  line-height: normal;
+
 }
 
 ul {
   list-style: none;
 }
 
+h2 {
+  font-family: 'Play';
+  font-size: 64px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* header */
 .main-logo {
   color: var(--color-title-main);
   font-family: 'Play';
@@ -69,6 +84,31 @@ ul {
   text-transform: capitalize;
 }
 
+.internal-link {
+  color: var(--color-main-text);
+}
+
+.internal-link-about-us {
+  color: var(--color-title-main);
+  font-weight: 700;
+}
+
+/* buttons */
+
+.button {
+  display: flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 32px;
+  background: var(--color-title-main);
+  color: var(--color-main-white);
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* hero section */
+
 .hero-title {
   color: var(--color-title-main);
   font-family: 'Play';
@@ -76,4 +116,150 @@ ul {
   font-weight: 700;
   line-height: 114px;
   text-transform: capitalize;
+  width: 529px;
+}
+
+.button-text {
+  color: var(--color-dark-grey);
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  width: 238px;
+}
+
+/* about us section */
+
+.about-us-title {
+  width: 529px;
+}
+
+.about-us-title-highlight {
+  color: var(--color-title-main);
+  text-transform: capitalize;
+}
+
+.about-us-text {
+  font-size: 22px;
+  line-height: 38px;
+  width: 709px;
+
+}
+
+.about-us-text-highlight {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* why people choose us */
+
+.choose-us-title {
+  text-align: center;
+}
+
+.choose-us-highlight {
+  color: var(--color-title-main);
+
+}
+
+.text-why-people-choose-us {
+  width: 252px;
+  color: var(--color-secondary-text);
+  line-height: 24px;
+  text-align: center;
+}
+
+
+/* our procedures */
+.our-procedures-title {
+  text-align: center;
+}
+
+.our-procedures-highlight {
+  color: var(--color-title-main);
+}
+
+.our-procedures-text {
+  color: var(--color-main-white);
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+  width: 152px;
+
+}
+
+/* contact section */
+.contact-section-highlight {
+  color: var(--color-title-main);
+}
+
+.contact-section-title {
+  text-align: center;
+  display: flex;
+  width: 432px;
+  height: 75px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form-text {
+  color: var(--color-main-white);
+  font-size: 22px;
+  font-weight: 600;
+  width: 274px;
+  text-align: center;
+}
+
+.contact-form-text-highlight {
+  color: var(--color-title-main);
+}
+
+.confidential-text {
+  color: var(--color-light-grey);
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  width: 213px;
+
+}
+
+.confidential-underline {
+  text-decoration-line: underline;
+}
+
+/* footer */
+
+.footer-logo {
+  color: var(--color-title-main);
+  font-family: 'Play';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: capitalize;
+  width: 83px;
+}
+
+.footer-link-address {
+  color: var(--color-main-white);
+  font-size: 16px;
+  width: 203px;
+}
+
+.internal-link-footer {
+  color: var(--color-main-white);
+}
+
+.address-footer {
+  color: var(--color-main-white);
+}
+
+.policy {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.copyright {
+  font-size: 13px;
+  color: var(--color-light-grey);
+  width: 203px;
+
 }
