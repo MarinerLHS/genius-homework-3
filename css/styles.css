@@ -68,6 +68,14 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  color: var(--color-main-white);
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+  width: 152px;
+}
+
 a {
   text-decoration: none;
 }
@@ -176,15 +184,6 @@ a {
 
 .our-procedures-highlight {
   color: var(--color-title-main);
-}
-
-.our-procedures-text {
-  color: var(--color-main-white);
-  text-align: center;
-  font-size: 22px;
-  line-height: 26px;
-  width: 152px;
-
 }
 
 /* contact section */
