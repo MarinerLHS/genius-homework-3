@@ -48,6 +48,18 @@
 
 /* main */
 
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1288px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+
+}
+
 body {
   color: var(--color-main-text);
   font-family: 'Roboto', sans-serif;
@@ -55,11 +67,24 @@ body {
   font-style: normal;
   font-size: 18px;
   line-height: normal;
+  margin: 0;
 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -83,6 +108,32 @@ a {
 
 
 /* header */
+.header-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 32px;
+}
+
+.header {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  margin-bottom: 16px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 56px;
+}
+
 .main-logo {
   color: var(--color-title-main);
   font-family: 'Play';
@@ -90,13 +141,15 @@ a {
   font-weight: 700;
   line-height: 21px;
   text-transform: capitalize;
+  width: 74px;
+  height: 42px;
 }
 
 .internal-link {
   color: var(--color-main-text);
 }
 
-.internal-link-about-us {
+.internal-link:hover {
   color: var(--color-title-main);
   font-weight: 700;
 }
@@ -109,13 +162,28 @@ a {
   align-items: flex-start;
   gap: 10px;
   border-radius: 32px;
+  border-color: var(--color-title-main);
   background: var(--color-title-main);
   color: var(--color-main-white);
   font-weight: 600;
   line-height: normal;
+
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--color-secondary-text);
+  border-color: var(--color-title-main);
 }
 
 /* hero section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 165px;
+}
 
 .hero-title {
   color: var(--color-title-main);
@@ -125,6 +193,7 @@ a {
   line-height: 114px;
   text-transform: capitalize;
   width: 529px;
+  padding: 37px 0 143px 0;
 }
 
 .button-text {
@@ -247,8 +316,18 @@ a {
   color: var(--color-main-white);
 }
 
+.internal-link-footer:hover {
+  color: var(--color-title-main);
+  font-weight: 700;
+}
+
 .address-footer {
   color: var(--color-main-white);
+}
+
+.address-footer:hover {
+  color: var(--color-title-main);
+  font-weight: 700;
 }
 
 .policy {
@@ -261,4 +340,8 @@ a {
   color: var(--color-light-grey);
   width: 203px;
 
+}
+
+.footer {
+  background-color: var(--color-main-text);
 }
