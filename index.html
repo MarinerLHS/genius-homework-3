@@ -43,9 +43,11 @@
   <main>
     <section class="hero_section section" id="hero-section">
       <div class="hero__container">
-        <div class="hero-picture"><img class="hero-picture-conf"
+        <div class="hero-picture">
+          <img class="hero-picture-conf"
             src="./pictures/hero-title-picture/woman-makes-face-massage.jpeg"
-            alt="woman-makes-face-massage"></div>
+            alt="woman-makes-face-massage">
+        </div>
         <div class="hero-section_content">
           <p>Косметологічна клініка</p>
           <h1 class="hero-title">Beauty Zone</h1>
@@ -139,6 +141,11 @@
         <h2 class="our-procedures-title">Наші <span
             class="our-procedures-highlight">процедури</span></h2>
         <ul class="our-procedures-content">
+          <button class="carousel-button" type="button"> <a href="#"> <svg
+                class="carousel-arrow" width="16" height="16">
+                <use href="./pictures/sprite/icons.svg#arrow"></use>
+              </svg></a>
+          </button>
           <li>
             <article>
               <div class="face-massage-2-block"><img class="face-massage-2"
@@ -174,6 +181,12 @@
               </div>
             </article>
           </li>
+          <button class="carousel-button" type="button"> <a href="#"> <svg
+                class="carousel-arrow" style="rotate: 180deg;" width="16"
+                height="16">
+                <use href="./pictures/sprite/icons.svg#arrow"></use>
+              </svg></a>
+          </button>
         </ul>
       </div>
     </section>
@@ -183,20 +196,35 @@
           <h2>Як нас <span class="contact-section-highlight">знайти</span>
           </h2>
         </div>
-        <div>
-          <p class="contact-form-text"> Запишіться <span
-              class="contact-form-text-highlight">безкоштовно</span>
-            та отримайте подарунок</p>
-          <!-- form for filling with button and text -->
-          <button class="button" type="button">Записатись безкоштовно</button>
-          <p class="confidential-text">Натискаючи на кнопку я погоджуюсь <a
-              class="confidential-underline" href="#">з
-              політикою конфіденційності</a></p>
+        <div class="contact-section-content">
+          <iframe class="contact-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1706727478794!5m2!1sru!2spl"
+            width="605" height="481" style="border:0; " allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="contact-section-form">
+            <div class="contact-form-title">
+              <p>
+                Запишіться
+                <span class="contact-form-text-highlight">безкоштовно</span>
+                <br>
+                та отримайте подарунок
+              </p>
+            </div>
+            <div class="contact-form-main">
+              <p class="contatc-name">Ваше ім'я та прізвище</p>
+              <p class="contact-number">Ваш номер телефону</p>
+              <p class="contact-email">Ваша електронна пошта</p>
+              <div class="confidential-button"><button
+                  class="button button-contact-form" type="button">Записатись
+                  безкоштовно</button>
+                <p class="confidential-text">Натискаючи на кнопку я погоджуюсь
+                  <a class="confidential-underline" href="#">з
+                    політикою конфіденційності</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1706727478794!5m2!1sru!2spl"
-          width="605" height="481" style="border:0;" allowfullscreen=""
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
@@ -254,8 +282,8 @@
           </a>
           <p class="copyright">&copy; 2022 Дані захищені</p>
         </div>
-      </nav>
     </div>
+    </nav>
   </footer>
 </body>
 
