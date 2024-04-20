@@ -964,7 +964,7 @@ label {
 }
 
 .form-input {
-  color: var(--color-light-grey);
+  color: var(--color-main-white);
   width: 100%;
   background-color: transparent;
   border: 2px solid var(--color-light-grey);
